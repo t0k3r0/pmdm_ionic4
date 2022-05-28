@@ -2,33 +2,33 @@ import { GestionSucesosService } from './../servicios/gestion-sucesos.service';
 import { Component } from '@angular/core';
 class ClaseElemento{
 
-  private nombre: string;
-  private icono: string;
-  private enlace: string;
-  constructor(nombre: string, icono: string, enlace: string) {
-    this.nombre = nombre;
-    this.icono = icono;
-    this.enlace = enlace;
+  private id: string;
+  private source: string;
+  private town: string;
+  constructor(id: string, source: string, town: string) {
+    this.id = id;
+    this.source = source;
+    this.town = town;
   }
 
 
-  public getEnlace(): string{
-    return this.enlace;
+  public getTown(): string{
+    return this.town;
   }
-  public setEnlace(value: string){
-    this.enlace = value;
+  public setTown(value: string){
+    this.town = value;
   }
-  public getIcono(): string{
-    return this.icono;
+  public getSource(): string{
+    return this.source;
   }
-  public setIcono(value: string) {
-    this.icono = value;
+  public setSource(value: string) {
+    this.source = value;
   }
-  public getNombre(): string{
-    return this.nombre;
+  public getId(): string{
+    return this.id;
   }
-  public setNombre(value: string) {
-    this.nombre = value;
+  public setId(value: string) {
+    this.id = value;
   }
 
 
@@ -39,16 +39,16 @@ class ClaseElemento{
 
 
 // type TElemento = {
-//   nombre: string;
-//   icono: string;
-//   enlace: string;
+//   id: string;
+//   source: string;
+//   town: string;
 
 
 // };
 // interface IElemento{
-//   nombre: string;
-//   icono: string;
-//   enlace: string;
+//   id: string;
+//   source: string;
+//   town: string;
 
 // }
 @Component({
@@ -59,19 +59,19 @@ class ClaseElemento{
 export class Tab1Page {
 
   // valoresLista: IElemento[] = [
-  //   { nombre: 'nombre1', icono: 'alarm-outline', enlace: '/tab1' },
-  //   { nombre: 'nombre2', icono: 'alarm-outline', enlace: '/tab2' },
-  //   { nombre: 'nombre3', icono: 'alarm-outline', enlace: '/tab3' }
+  //   { id: 'nombre1', source: 'alarm-outline', town: '/tab1' },
+  //   { id: 'nombre2', source: 'alarm-outline', town: '/tab2' },
+  //   { id: 'nombre3', source: 'alarm-outline', town: '/tab3' }
   // ];
   // peso: number;
   // altura: number;
   // imc: number;
-  listaObjetos: ClaseElemento[] = [
-    new ClaseElemento('nombre1', 'alarm-outline', '/tabs/tab1'),
-    new ClaseElemento('nombre2', 'alarm-outline', '/tabs/tab2'),
-    new ClaseElemento('nombre3', 'alarm-outline', '/tabs/tab3')
+  // listaObjetos: ClaseElemento[] = [
+  //   new ClaseElemento('nombre1', 'alarm-outline', '/tabs/tab1'),
+  //   new ClaseElemento('nombre2', 'alarm-outline', '/tabs/tab2'),
+  //   new ClaseElemento('nombre3', 'alarm-outline', '/tabs/tab3')
 
-  ];
+  // ];
 
   constructor(public gestionSucesos: GestionSucesosService) {
 
