@@ -1,0 +1,13 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Listado </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let it of listaObjetos3">
+    <ion-item>
+      <ion-label> {{it.getNombre3()}} </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

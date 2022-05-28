@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Tab 1 </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let it of gestionSucesos.getSucesos()">
+    <ion-item> <ion-label>{{it.nombre3}}</ion-label></ion-item>
+  </ion-list>
+  <div id="container">
+    <strong>esto es strong </strong>
+    <p>esto es p</p>
+  </div>
+</ion-content>

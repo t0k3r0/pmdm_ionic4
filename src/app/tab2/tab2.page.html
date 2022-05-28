@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>casos</ion-title>
+  </ion-toolbar>
+</ion-header>
+<!-- <app-page-header [titulo]=""></app-page-header> -->
+<ion-content>
+  <form #formulario="ngForm">
+    <ion-list>
+      <ion-list-header>
+        <ion-label> esto es el label </ion-label>
+        <ion-button [disabled]= "formulario.invalid" (click)="onClick()"> esto es el buton </ion-button>
+      </ion-list-header>
+
+
+      <ion-item>
+        <ion-label> peso </ion-label>
+        <ion-input name="peso" type="number" placeholder="introduce peso" [(ngModel)]="peso" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label> altura </ion-label>
+        <ion-input name="altura" type="number" placeholder="introduce altura" [(ngModel)]="altura"  true required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label> imc: {{imc}} </ion-label>
+      </ion-item>
+    </ion-list>
+  </form>
+
+</ion-content>
